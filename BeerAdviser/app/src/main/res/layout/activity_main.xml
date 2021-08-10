@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:text="@string/brands"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.242" />
 
     <Button
         android:id="@+id/button2"
@@ -31,15 +31,15 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
         android:entries="@array/beer_colors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <TextView
         android:id="@+id/textView"
