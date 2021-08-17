@@ -7,14 +7,20 @@ import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class CreateMessageActivity extends AppCompatActivity {
-
+    final String a[]= new String[100];
+    public static final String EXTRA_MESSAGE="message";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent= getIntent();
+        String messageText = intent.getStringExtra(EXTRA_MESSAGE);
+        TextView messageView = (TextView)findViewById(R.id.message1);
+        messageView.setText(messageText);
     }
     public void onSendMessage(View view){
         EditText messageView= (EditText)findViewById(R.id.message);
