@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Propietario.AsignacionCarga">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="138dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="CARGA PENDIENTE"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/spinnerCarga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.050000012" />
+
+                <Spinner
+                    android:id="@+id/spinnerCarga"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintBottom_toTopOf="@+id/EditOrigenCarga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Origen"
+                    app:layout_constraintBottom_toTopOf="@+id/textView16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerCarga" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Destino"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="Dimenciones"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/EditOrigenCarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="70dp"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/EditDestinoCarga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerCarga" />
+
+                <EditText
+                    android:id="@+id/EditDestinoCarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditOrigenCarga" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="52dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:textColor="#DF0000"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditDestinoCarga" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="124dp"
+                    android:layout_marginTop="352dp"
+                    android:layout_marginEnd="136dp"
+                    android:text="SELECCIONA EL VEHICULO"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/spinnerVehiculos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Spinner
+                    android:id="@+id/spinnerVehiculos"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="55dp"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonasiganrcarga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <Button
+                    android:id="@+id/buttonasiganrcarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="152dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="163dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="Asignar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerVehiculos" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333232"
+    tools:context=".Propietario.MainPropietario">
+
+    <Button
+        android:id="@+id/buttonAgregarCarro"
+        android:layout_width="251dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="AgregarCarro"
+        android:text="Agregar Carro"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAsignarConductor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAsignarConductor"
+        android:layout_width="251dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="buttonasignarconductor"
+        android:text="Asignar Conductor"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgregarCarro" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="251dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="buttonasignarcarga"
+        android:text="Asignacion Carga"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAsignarConductor" />
+
+    <Button
+        android:id="@+id/buttonKM"
+        android:layout_width="251dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="272dp"
+        android:text="Km Recorrido"
+        android:onClick="buttonaKmrecorrido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

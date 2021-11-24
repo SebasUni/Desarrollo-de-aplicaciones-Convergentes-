@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Propietario.KmRecorrido">
+
+    <Spinner
+        android:id="@+id/spinnerVehiculosInforme"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textInfoPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="130dp"
+        android:text="Placa"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoMarca"
+        app:layout_constraintEnd_toStartOf="@+id/EdInfoPlaca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textInfoMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="Marca"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoConductor"
+        app:layout_constraintEnd_toStartOf="@+id/EdInfoMarca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoPlaca" />
+
+    <TextView
+        android:id="@+id/textInfoConductor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="IdConductor"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoKm"
+        app:layout_constraintEnd_toStartOf="@+id/EdInfoConductor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoMarca" />
+
+    <TextView
+        android:id="@+id/textInfoKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="Km Recorrido"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoConsumo"
+        app:layout_constraintEnd_toStartOf="@+id/EdInfoKmRecorrido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoConductor" />
+
+    <TextView
+        android:id="@+id/textInfoConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="Consumo x 1Km"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoViajes"
+        app:layout_constraintEnd_toStartOf="@+id/EdInfoConsumo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoKm" />
+
+    <TextView
+        android:id="@+id/EdInfoPlaca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EdInfoMarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoPlaca"
+        app:layout_constraintTop_toTopOf="@+id/textInfoPlaca" />
+
+    <TextView
+        android:id="@+id/EdInfoMarca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="41dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoConductor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoMarca"
+        app:layout_constraintTop_toTopOf="@+id/textInfoMarca" />
+
+    <TextView
+        android:id="@+id/EdInfoConductor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EdInfoKmRecorrido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoConductor"
+        app:layout_constraintTop_toTopOf="@+id/textInfoConductor" />
+
+    <TextView
+        android:id="@+id/EdInfoKmRecorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="41dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EdInfoConsumo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoKm"
+        app:layout_constraintTop_toTopOf="@+id/textInfoKm" />
+
+    <TextView
+        android:id="@+id/EdInfoConsumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="37dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EdInfoViajes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoConsumo"
+        app:layout_constraintTop_toTopOf="@+id/textInfoConsumo" />
+
+    <TextView
+        android:id="@+id/textInfoViajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="40dp"
+        android:text="Viajes Realizados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoConsumo" />
+
+    <TextView
+        android:id="@+id/EdInfoViajes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInfoViajes"
+        app:layout_constraintTop_toTopOf="@+id/textInfoViajes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

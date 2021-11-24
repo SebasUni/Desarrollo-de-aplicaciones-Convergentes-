@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.InformacionUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textInfoCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/email"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textInfoTelefono"
+                    app:layout_constraintEnd_toStartOf="@+id/EditEmail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfoApellido" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="208dp"
+                    android:layout_height="225dp"
+                    android:layout_marginStart="91dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="112dp"
+                    app:layout_constraintBottom_toTopOf="@+id/EditNombre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+                <Button
+                    android:id="@+id/buttonActualziar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="139dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Actualizar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textCambiarContra" />
+
+                <TextView
+                    android:id="@+id/textInfoNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="270dp"
+                    android:text="@string/nombre"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textInfoApellido"
+                    app:layout_constraintEnd_toStartOf="@+id/EditNombre"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/EditApelliddo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="50dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toTopOf="@+id/EditEmail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoApellido"
+                    app:layout_constraintTop_toBottomOf="@+id/EditNombre" />
+
+                <TextView
+                    android:id="@+id/textInfoApellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="38dp"
+                    android:text="@string/apellido"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textInfoCorreo"
+                    app:layout_constraintEnd_toStartOf="@+id/EditApelliddo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfoNombre" />
+
+                <TextView
+                    android:id="@+id/EditNombre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toTopOf="@+id/EditApelliddo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoNombre"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/EditEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="28dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoCorreo"
+                    app:layout_constraintTop_toBottomOf="@+id/EditApelliddo" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="31dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfoCorreo">
+
+                    <TextView
+                        android:id="@+id/textInfoTelefono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:text="Telefono"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditTelefono"
+                        android:layout_width="196dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="77dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textCambiarContra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="145dp"
+                    android:layout_marginBottom="14dp"
+                    android:clickable="true"
+                    android:text="Cambiar mi contraseña"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonActualziar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <TextView
+                    android:id="@+id/textViewContraseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="37dp"
+                    android:text="Contraseña"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <TextView
+                    android:id="@+id/textViewConfirmacionContr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="39dp"
+                    android:text="Confirme su contraseña"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonActualziar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextContrasena" />
+
+                <EditText
+                    android:id="@+id/editTextContrasena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextConfirmacioncontra"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textViewContraseña"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <EditText
+                    android:id="@+id/editTextConfirmacioncontra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonActualziar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewConfirmacionContr"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextContrasena" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

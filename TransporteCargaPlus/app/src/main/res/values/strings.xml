@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TransporteCargaPlus</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="newuser">NEWUSER</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="digite_su_correo">Digite su correo</string>
+    <string name="digite_su_contrase_a">Digite su contraseña</string>
+    <string name="digite_su_apellido">Digite su apellido</string>
+    <string name="marca">Marca</string>
+    <string name="placa">Placa</string>
+    <string name="agregar_carro">Agregar Carro</string>
+    <string name="digite_la_marca">Digite la marca</string>
+    <string name="digite_la_placa">Digite la placa</string>
+    <string name="claveAPI">AIzaSyAEBkUoD2NQGYvPixrlX_2Bj0SF8F5m1b8</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
